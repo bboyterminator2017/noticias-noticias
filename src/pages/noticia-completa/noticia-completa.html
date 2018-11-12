@@ -1,0 +1,25 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let n of noticias">
+
+    <ion-item >
+      <ion-avatar item-start>
+        <img src="img/marty-avatar.png">
+      </ion-avatar>
+      <h2>{{n.titulo}}</h2>
+      <p>{{n.data}}</p>
+    </ion-item>
+  
+    <img src={{n.img}}>
+  
+    <ion-card-content>
+      <p>{{n.conteudo}}</p>
+    </ion-card-content>
+
+  
+  </ion-card>
+
+</ion-content>
